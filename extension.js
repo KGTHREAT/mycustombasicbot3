@@ -119,7 +119,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Java Bot",
+        botName: "Karl Bot",
         language: "english",
         chatLink: "https://rawgit.com/cooljddj/mybasicBot/master/lang/en.json",
         maximumAfk: 70,
@@ -136,10 +136,10 @@
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        lockskipPosition: 5,
+        lockskipPosition: 3,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
+            ["op", "This song is on the Over Played list. "],
             ["history", "This song is in the history. "],
             ["mix", "You played a mix, which is against the rules. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
@@ -155,7 +155,7 @@
         motd: "We Deliver Fire.",
         filterChat: true,
         etaRestriction: false,
-        welcome: false,
+        welcome: true,
         opLink: "http://bit.ly/1zQ3biY",
         rulesLink: "http://bit.ly/1A5GcR9",
         themeLink: "We allow These genres: Trap, House, Chill, Electro, Rap, and Bass music.",
