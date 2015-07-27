@@ -191,7 +191,7 @@
         lockskipPosition: 3,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the Over Played list. "],
+            ["op", "This song is on the Over Played list: http://bit.ly/1zQ3biY."],
             ["history", "This song is in the history. "],
             ["mix", "You played a mix, which is against the rules. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
@@ -215,7 +215,7 @@
         fbLink: "http://facebook.com/alltrapnation",
         youtubeLink: "https://www.youtube.com/user/AllTrapNation",
         website: "http://alltrapnation.com/",
-        intervalMessages: ["Like us on Facebook: http://facebook.com/alltrapnation", "Sub to us on Youtube: https://www.youtube.com/user/AllTrapNation", "Follow us on twitter: http://twitter.com/alltrapnation"],
+        intervalMessages: ["Like us on Facebook: http://facebook.com/alltrapnation"],
         messageInterval: 5,
         songstats: false,
         commandLiteral: "!",
