@@ -191,15 +191,14 @@
         lockskipPosition: 3,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the Over Played list: http://bit.ly/1zQ3biY."],
+            ["op", "This song is on the OP list. "],
             ["history", "This song is in the history. "],
             ["mix", "You played a mix, which is against the rules. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
             ["nsfw", "The song you contained was NSFW (image or sound). "],
             ["unavailable", "The song you played was not available for some users. "],
             ["na", "The song you played was not available for some users. "],
-            ["troll", "The song you played is considered trolling if you play it again you will be banned"]
-            ["crap", "Bruh. your song is complete Crap. Smh."]
+            ["troll", "The song you played is considered trolling if you play it again you will be banned. "],
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
