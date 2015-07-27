@@ -106,7 +106,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Submit your music here: http://www.alltrapnation.com/trap-submission/ /");
+                    API.sendChat("/me Submit your music here: http://www.alltrapnation.com/trap-submission/");
                 }
             }
         };
@@ -119,7 +119,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Subscribe to Chill Nation: https://www.youtube.com/user/ChillStepNation /");
+                    API.sendChat("/me Subscribe to Chill Nation: https://www.youtube.com/user/ChillStepNation");
                 }
             }
         };
