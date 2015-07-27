@@ -18,15 +18,15 @@
             else return false;
         }         
 
-        bot.commands.creditsCommand = {
-            command: 'credits',  //The command to be called. With the standard command literal this would be: !bacon
+        bot.commands.fireCommand = {
+            command: 'fire',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("Java Bot Made By Yemasthui, Edited By COOLJ|Trap Nation | cooljddj|The Nation | xBytez");
+                    API.sendChat("https://media.giphy.com/media/oZYBdbW7TnhEQ/giphy.gif");
                 }
             }
         };
@@ -40,6 +40,19 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Join Our Facebook Group: http://on.fb.me/1dRgupy");
+                }
+            }
+        };
+        
+        bot.commands.housefireCommand = {
+            command: 'housefire',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://img3.wikia.nocookie.net/__cb20130528190013/creepypasta/images/0/05/House-on-fire-o.gif");
                 }
             }
         };
