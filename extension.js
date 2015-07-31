@@ -124,6 +124,32 @@
             }
         };
         
+        bot.commands.nationytCommand = {
+            command: 'nationyt',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Subscribe to The Nation: http://bit.ly/TheNationYt");
+                }
+            }
+        };
+        
+        bot.commands.nationfbCommand = {
+            command: 'nationfb',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Like The Nation on facebook: http://bit.ly/TheNationFb");
+                }
+            }
+        };
+        
         bot.commands.submissionsCommand = {
             command: 'submissions',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
@@ -214,7 +240,7 @@
         fbLink: "http://facebook.com/alltrapnation",
         youtubeLink: "https://www.youtube.com/user/AllTrapNation",
         website: "http://alltrapnation.com/",
-        intervalMessages: ["Like us on Facebook: http://facebook.com/alltrapnation"],
+        intervalMessages: "Like us on Facebook: http://facebook.com/alltrapnation",
         messageInterval: 5,
         songstats: false,
         commandLiteral: "!",
