@@ -232,7 +232,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Karl Bot",
         language: "english",
-        chatLink: "https://rawgit.com/cooljddj/mybasicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/KGTHREAT/basicBot/master/lang/en.json",
         maximumAfk: 70,
         afkRemoval: false,
         maximumDc: 120,
@@ -278,12 +278,12 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/cooljddj/mycustombasicbot/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/cooljddj/mycustombasicbot/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/ExampleOPlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/cooljddj/mybasicbot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/KGTHREAT/basicBot/master/basicBot.js', extend);
 
 }).call(this);
