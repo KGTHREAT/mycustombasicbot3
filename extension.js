@@ -18,19 +18,6 @@
             else return false;
         }         
 
-        bot.commands.fireCommand = {
-            command: 'fire',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("https://media.giphy.com/media/oZYBdbW7TnhEQ/giphy.gif");
-                }
-            }
-        };
-        
         bot.commands.fbgCommand = {
             command: 'fbg',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
@@ -40,32 +27,6 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Join Our Facebook Group: http://on.fb.me/1dRgupy");
-                }
-            }
-        };
-        
-        bot.commands.itslitCommand = {
-            command: 'itslit',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("http://ak-hdl.buzzfed.com/static/2014-11/25/17/enhanced/webdr10/anigif_enhanced-buzz-23602-1416956093-7.gif");
-                }
-            }
-        };
-        
-        bot.commands.housefireCommand = {
-            command: 'housefire',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("http://img3.wikia.nocookie.net/__cb20130528190013/creepypasta/images/0/05/House-on-fire-o.gif");
                 }
             }
         };
