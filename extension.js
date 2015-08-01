@@ -247,8 +247,8 @@
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
-        lockskipReasons: [
+        skipPosition: 3,
+        skipReasons: [
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list: http://bit.ly/1zQ3biY. "],
             ["history", "This song is in the history. "],
