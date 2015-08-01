@@ -175,6 +175,7 @@
                 }
             }
         };
+        /*
         englishCommand: {
                 command: 'english',
                 rank: 'bouncer',
@@ -207,7 +208,7 @@
                     }
                 }
             },
-        
+        */
         bot.commands.changelog = {
             command: 'changelog',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'bouncer', //Minimum user permission to use the command
