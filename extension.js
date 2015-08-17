@@ -235,7 +235,7 @@
         chatLink: "https://rawgit.com/KGTHREAT/basicBot/master/lang/en.json",
         maximumAfk: 70,
         afkRemoval: false,
-        maximumDc: 120,
+        maximumDc: 20,
         bouncerPlus: true,
         lockdownEnabled: false,
         lockGuard: false,
