@@ -237,6 +237,7 @@
         afkRemoval: false,
         maximumDc: 20,
         bouncerPlus: true,
+        blacklistEnabled: true,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 5,
@@ -279,7 +280,8 @@
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/OPlist.json"
+            OP: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/OPlist.json",
+            BANNED: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/BANNEDlist.json"
         }
     }));
 
