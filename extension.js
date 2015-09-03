@@ -262,7 +262,7 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: true,
+        motdEnabled: false,
         motdInterval: 5,
         motd: "Mehs to skip: 9",
         filterChat: true,
